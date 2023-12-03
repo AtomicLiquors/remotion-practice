@@ -16,25 +16,25 @@ Welcome to your Remotion project!
 **Install Dependencies**
 
 ```console
-npm i
+yarn
 ```
 
 **Start Preview**
 
 ```console
-npm start
+yarn start
 ```
 
 **Render video**
 
 ```console
-npm run build
+yarn build
 ```
 
 **Upgrade Remotion**
 
 ```console
-npm run upgrade
+yarn run upgrade
 ```
 
 ## Docs
