@@ -7,6 +7,7 @@ export const Background: React.FC = () => {
       padding: 45
     }}>
       <div style={{flex: 1,
+      fontSize: '30px',
       backgroundColor: 'white',
       boxShadow: '0 5px 10px rgba(0,0,0,0.1)',
       }}>hi</div>

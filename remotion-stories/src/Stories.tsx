@@ -2,6 +2,7 @@ import {AbsoluteFill, continueRender, delayRender} from 'remotion';
 import {Background} from './Background';
 import {useCallback, useEffect, useState} from 'react';
 import { SingleMessageApiResponse } from './types';
+import { Message } from './Message';
 
 export const Stories: React.FC<{
 	messageIds: string[];
@@ -36,13 +37,14 @@ export const Stories: React.FC<{
 
 	return (
 		<AbsoluteFill>
-			<Background />
+    {messages.map((m) => {
+      return (
+        <Message data={m}/>
+      )
+    })}
 
-      {messages.map((m) => {
-        return (
-          <div style={{fontSize: 80}}>items</div>
-        )
-      })}
+    {/*<Background />*/}
+
 		</AbsoluteFill>
 	);
 };
